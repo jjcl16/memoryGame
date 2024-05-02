@@ -1,9 +1,10 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   /* margin: 0 auto; */
   /* padding: 2rem; */
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  width: 100%;
 }
 
 .logo {
@@ -45,13 +46,20 @@
 
 .top{
   display: grid;
-  grid-template:  50px 50px / 83.5vw 15vw;
+  grid-template:  50px 50px / 20% 60% 20%;
   align-items: center;
+  width: 100%;
+  z-index: 1;
   
 }
 
 h1{
   grid-row: 1 / 3;
+  grid-column: 2 / 3;
+}
+
+.score{
+  grid-column: 3 / 4;
 }
 
 .cardsBoard {
@@ -75,7 +83,7 @@ img{
   height: 100%;
   max-height: 200px;
   max-width:100%;
-  transition: all 0.2s;
+  transition: all .2s;
 }
 
 img:hover{
